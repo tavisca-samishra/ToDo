@@ -10,22 +10,24 @@
 }
 .menu{
     grid-area: 2/1/8/2;
-    background-color: rgb(208, 208, 224);
+    background-color:rgb(88, 88, 86);
 }
 .space{
     grid-area: 2/2/8/6;
 }
 .footer{
     grid-area: auto/1/auto/6;
-    background-color: rgb(120, 122, 120);
+    background-color: black;
+}
+li a:hover{
+    color: black;
+    background-color: aliceblue;
 }
 li{
     list-style-type: none;
     text-align: left;
 }
-li:active{
-    background-color: rgb(252, 250, 248);
-}
+
 li a{ 
     border-collapse: collapse;
     display: block;
@@ -33,7 +35,7 @@ li a{
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     font-weight: bold;
-    color: black;
+    color: rgb(248, 246, 246);
     text-decoration: none;
 }
 .info{
@@ -42,4 +44,15 @@ li a{
     float: left;
     width: 30%;
     height: 100%;
+}
+button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

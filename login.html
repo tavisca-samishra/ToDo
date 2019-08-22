@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <link rel="stylesheet" href="style.css">
     <style>
         input{
-            width: 7em;
-            height: 3em;
+            text-align: center;
+            width: 30%;
+            height: 40px;
+            font-size: 1em;
+            margin: 20px;
         }
         </style>
     <meta charset="UTF-8">
@@ -14,12 +18,14 @@
 </head>
 <body>
     <center>
-        <h1>Login</h1>
-        <form action="user.html">
-            <input type="text" placeholder="username">
-            <input type="password" placeholder="password">
-            <button type="submit">Submit</button>
-        </form>
+        <fieldset style="height: 500px">
+            <legend style="font-size: 25px;">Login</legend>
+                <input id="user" type="text" placeholder="username"><br>
+                <input id="pass" type="password" placeholder="password"><br>
+                <button id="submit" onclick="check()">Submit</button>
+        </fieldset>
+        <div id="status"></div>
     </center>
+    <script src="behavior.js"></script>
 </body>
 </html>

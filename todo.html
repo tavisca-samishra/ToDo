@@ -6,77 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta httpUXA-Compatible" content="ie=edge">
     <style>
-        tr{
+        tr {
             padding: 20px;
+            font-size: 1.5em;
         }
-        table{
+
+        table {
             margin-top: 5%;
-            border-top: black 2px solid;
+            border-bottom: black 2px solid;
         }
-        input{
-            width: 200px;
+
+        input {
+            width: 400px;
             height: 40px;
             font-size: 1em;
         }
-        div{
+
+        div {
             font-size: 1em;
         }
-        .button {
-            background-color: #4CAF50;
-            /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-        }
     </style>
+        <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <center>
-        <h2>ToDo list</h2>
-        <table style="width: 50%;">
-            <tr>
-                <td>
-                    <div>
-                        <h3>Study</h3>
-                    </div>
-                </td>
-                <td><button class="button">Edit</td>
-                <td><button class="button">X</td>
-
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <h3>Eat</h3>
-                    </div>
-                </td>
-                <td><button class="button">Edit</td>
-                <td><button class="button">X</td>
-
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <h3>Sleep</h3>
-                    </div>
-                </td>
-                <td><button class="button">Edit</td>
-                <td><button class="button">X</td>
-
-            </tr>
-            <tr>
-                <td><input type="text" placeholder="add a todo"></td>
-                <td><button class="button">Add</td>
-
-            </tr>
-        </table>
+        <fieldset style="height: 500px">
+            <legend style="font-size: 25px;">ToDo list</legend>
+            <table id="tb" style="width: 50%;">
+                <tr>
+                    <td><input id="input" type="text" placeholder="add a todo"></td>
+                    <td><button class="button" onclick="addRow()">Add</td>
+                </tr>
+            </table>
+        </fieldset>
     </center>
+    <script src="behavior.js"></script>
 </body>
 
 </html>
