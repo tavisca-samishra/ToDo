@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta httpUXA-Compatible" content="ie=edge">
+    <style>
+        tr {
+            padding: 20px;
+            font-size: 1.5em;
+        }
+
+        table {
+            margin-top: 5%;
+            border-bottom: black 2px solid;
+        }
+
+        #input2{
+            width: 100px;
+        }
+        input {
+            width: 400px;
+            height: 40px;
+        }
+
+        div {
+            font-size: 1em;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <fieldset style="min-height: 500px">
+            <legend style="font-size: 25px;">ToDo list</legend>
+            <div id="log">
+                <input id="user" type="text" placeholder="username"><br>
+                <input id="pass" type="password" placeholder="password"><br>
+                <button id="submit" onclick="check()">Submit</button>
+            </div>
+            <table style="width: 50%;">
+                <tr>
+                    <td><input id="input" type="text" placeholder="enter to add"></td>
+                    <td><button class="button" onclick="addRow()">Add</td>
+                        <td><input id="input2" width="50px" type="text" placeholder="search" onkeyup="search()"></td>
+                </tr>
+            </table>
+            <table id="tb" style="width: 50%;">
+                </table>
+        </fieldset>
+    </center>
+    <script src="behavior.js"></script>
+</body>
+
+</html>
