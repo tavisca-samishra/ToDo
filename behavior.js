@@ -62,7 +62,7 @@ function append(r) {
     document.getElementById("tb").deleteRow(i + 1);
 }
 function search() {
-    var input = document.getElementById("input").value;
+    var input = document.getElementById("input2").value;
     var x = document.getElementById("tb").rows.length;
     var data;
     for (let i = 0; i < x; i++) {
