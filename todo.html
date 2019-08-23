@@ -19,27 +19,33 @@
         input {
             width: 400px;
             height: 40px;
-            font-size: 1em;
         }
 
         div {
             font-size: 1em;
         }
     </style>
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <center>
-        <fieldset style="height: 500px">
+        <fieldset style="min-height: 500px">
             <legend style="font-size: 25px;">ToDo list</legend>
-            <table id="tb" style="width: 50%;">
+            <div id="log">
+                <input id="user" type="text" placeholder="username"><br>
+                <input id="pass" type="password" placeholder="password"><br>
+                <button id="submit" onclick="check()">Submit</button>
+            </div>
+            <table style="width: 50%;">
                 <tr>
-                    <td><input id="input" type="text" placeholder="add a todo"></td>
-                    <td><button class="button" onclick="addRow()">Add</td>
+                    <td><input id="input" type="text" placeholder="enter to add or search" onkeyup="search()"></td>
+\                    <td><button class="button" onclick="addRow()">Add</td>
                 </tr>
             </table>
+            <table id="tb" style="width: 50%;">
+                </table>
         </fieldset>
     </center>
     <script src="behavior.js"></script>
